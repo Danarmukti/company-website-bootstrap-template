@@ -104,22 +104,7 @@ button.navbar-toggler:focus {
 /* Sub Teks */
 
 /* Responsive jumbotron */
-@media only screen and (max-width: 600px) {
-  .jumbotron-container {
-    padding: 16rem 0rem;
-  }
-  .jumbotron p {
-    margin-top: -0.3rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .jumbotron-container {
-    padding: 16rem 0rem;
-  }
-  .jumbotron p {
-    margin-top: -0.3rem;
-  }
-}
+
 /* Responsive jumbotron */
 /* Jumbotron entrance animation  */
 @keyframes fade-in {
@@ -178,19 +163,6 @@ button.navbar-toggler:focus {
 }
 /* about image */
 
-@media only screen and (max-width: 600px) {
-  .about-img {
-    width: 100%;
-    height: 300px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .about-img {
-    width: 100%;
-    height: 400px;
-  }
-}
-
 /* ------------------------------------------ */
 /* about Section */
 
@@ -229,7 +201,7 @@ button.navbar-toggler:focus {
 .logo-service {
   margin-top: 1rem;
 }
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .card {
     width: 100%;
   }
@@ -244,7 +216,7 @@ button.navbar-toggler:focus {
   .service-heading {
     margin-bottom: 2rem;
   }
-}
+} */
 /* ------------------------------------------ */
 /* Service Section */
 
@@ -302,7 +274,7 @@ button.navbar-toggler:focus {
   font-size: 1.5rem;
   font-weight: 600;
 }
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .carousel-image {
     left: 32%;
     top: -45px;
@@ -320,14 +292,15 @@ button.navbar-toggler:focus {
     font-size: 0.85rem;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .carousel-image {
     left: 29%;
     /* top: -8%;  */
-    width: 160px;
+/* width: 160px;
     height: 160px;
-  }
-  .testimonial-heading {
+  } */
+/* .testimonial-heading {
     padding-top: 3rem;
   }
   .carousel-name {
@@ -337,7 +310,7 @@ button.navbar-toggler:focus {
   .carousel-desc {
     font-size: 0.9rem;
   }
-}
+} */
 /* ------------------------------------------ */
 /* Testimoni Section */
 
@@ -390,3 +363,105 @@ footer section section div.col-md-3 ul li a:hover {
 }
 /* ------------------------------------------ */
 /* Footer Section */
+
+/* Untuk layar dengan lebar maksimal 470px */
+@media only screen and (max-width: 470px) {
+  .jumbotron-container {
+    width: 100%;
+    padding: 16rem 0rem;
+  }
+  .jumbotron p {
+    margin-top: -0.3rem;
+  }
+  .carousel-image {
+    left: 25%;
+    top: -30px;
+    width: 100px;
+    height: 100px;
+  }
+  .testimonial-heading {
+    padding-top: 0rem;
+  }
+  .carousel-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .carousel-desc {
+    font-size: 0.7rem;
+  }
+  .about-img {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+/* Untuk layar dengan lebar maksimal 600px */
+@media only screen and (min-width: 471px) and (max-width: 600px) {
+  .jumbotron-container {
+    padding: 16rem 0rem;
+  }
+  .jumbotron p {
+    margin-top: -0.3rem;
+  }
+  .about-img {
+    width: 100%;
+    height: 300px;
+  }
+  .carousel-image {
+    left: 33%;
+    top: -15px;
+    width: 140px;
+    height: 140px;
+  }
+  .testimonial-heading {
+    padding-top: 3rem;
+  }
+  .carousel-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .carousel-desc {
+    font-size: 0.85rem;
+  }
+  .card {
+    width: 100%;
+  }
+  .service-heading {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Untuk layar dengan lebar antara 600px dan 768px */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .jumbotron-container {
+    padding: 16rem 0rem;
+  }
+  .jumbotron p {
+    margin-top: -0.3rem;
+  }
+  .about-img {
+    width: 100%;
+    height: 400px;
+  }
+  .card {
+    width: 100%;
+  }
+  .service-heading {
+    margin-bottom: 2rem;
+  }
+  .carousel-image {
+    left: 37%;
+    width: 160px;
+    height: 160px;
+  }
+  .testimonial-heading {
+    padding-top: 3rem;
+  }
+  .carousel-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .carousel-desc {
+    font-size: 0.9rem;
+  }
+}
