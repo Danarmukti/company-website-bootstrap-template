@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+* {
+  font-family: "Lexend Deca", serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: none;
+}
+
+:root {
+  --primary-color: #2d3250;
+  --secondary-color: #424769;
+  --tertiary-color: #7077a1;
+  --quaternary-color: #f6b17a;
+  --text-color: #ffff;
+}
+
+/* navbar */
+/* ------------------------------------------ */
+/* navbar container */
+.navbar {
+  background: var(--primary-color);
+  font-weight: 500;
+  box-shadow: 0px 2px 50px 0px rgba(112, 119, 161, 1);
+  z-index: 100;
+}
+/* navbar container */
+
+/* navbar logo */
+.navbar div a.navbar-brand {
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: var(--text-color);
+}
+/* navbar logo */
+
+/* navbar menu */
+.navbar div ul li a {
+  color: var(--text-color);
+}
+/* navbar menu hover */
+.navbar div ul li a:hover {
+  color: var(--quaternary-color);
+}
+button.navbar-toggler:focus {
+  box-shadow: 0px 2px 50px 0px rgba(112, 119, 161, 1);
+}
+/* navbar menu hover */
+
+/* navbar menu */
+/* ------------------------------------------ */
+/* navbar section*/
+
+/* jumbotron Section */
+/* ------------------------------------------ */
+/* button  */
+.btn-primary {
+  position: relative;
+  background: var(--quaternary-color);
+  border: 0px;
+  border-radius: 100rem;
+  padding: 0.65rem 2rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  transition: 0.2s all ease-in-out;
+}
+
+.btn-primary:hover {
+  opacity: 1;
+  scale: 0.95;
+  background: #fc9846;
+}
+/* button  */
+/* jumbotron */
+.jumbotron-container {
+  background: linear-gradient(rgba(45, 50, 80, 0.8), rgba(45, 50, 80, 0.8)),
+    url(../img/bg-jumbotron.jpg) center center;
+  object-fit: cover;
+  background-size: cover;
+  padding: 16rem;
+  backdrop-filter: blur(20px);
+}
+.jumbotron {
+  position: relative;
+}
+/* heading teks "DANAR MUKTI COMPANY" */
+.jumbotron h1 {
+  position: relative;
+  font-weight: bold;
+  font-size: 3rem;
+  color: var(--text-color);
+  animation: fade-in 1.5s ease-in-out;
+}
+/* heading teks "DANAR MUKTI COMPANY" */
+
+/* Sub Teks */
+.jumbotron p {
+  position: relative;
+  font-size: 1.4rem;
+  margin-top: -0.6rem;
+  color: var(--text-color);
+  animation: fade-in 1.5s ease-in-out;
+}
+/* Sub Teks */
+
+/* Responsive jumbotron */
+@media only screen and (max-width: 600px) {
+  .jumbotron-container {
+    padding: 16rem 0rem;
+  }
+  .jumbotron p {
+    margin-top: -0.3rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .jumbotron-container {
+    padding: 16rem 0rem;
+  }
+  .jumbotron p {
+    margin-top: -0.3rem;
+  }
+}
+/* Responsive jumbotron */
+/* Jumbotron entrance animation  */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    top: 50px;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+/* Jumbotron entrance animation  */
+
+/* jumbotron */
+
+/* ------------------------------------------ */
+/* jumbotron Section */
+
+/* about Section */
+/* ------------------------------------------ */
+
+/* about container */
+.about-section {
+  margin-top: 10rem;
+}
+/* about container */
+
+/* heading about */
+.heading-about {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+/* heading about */
+
+/* paragraph about */
+.paragraph-about {
+  font-weight: 400;
+  color: var(--primary-color);
+}
+/* paragraph about */
+
+/* content about */
+.content-about {
+  height: 600px;
+}
+/* content about */
+
+/* about image */
+.about-img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 50px;
+  box-shadow: 0px 2px 50px 0px rgba(112, 119, 161, 0.7);
+}
+/* about image */
+
+@media only screen and (max-width: 600px) {
+  .about-img {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about-img {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+/* ------------------------------------------ */
+/* about Section */
+
+/* service Section */
+/* ------------------------------------------ */
+.service-section {
+  margin-top: 10rem;
+}
+.service-heading {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.card-icon {
+  width: max-content;
+  height: max-content;
+  background: var(--primary-color);
+  font-size: 6rem;
+  padding: 3rem;
+  border-radius: 1.6rem;
+  color: var(--text-color);
+}
+.card {
+  width: 30rem;
+  height: max-content;
+  box-shadow: 0px 2px 50px 0px rgba(112, 119, 161, 0.7);
+  border: none;
+}
+.card-title {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.card-text {
+  font-weight: 400;
+  color: var(--primary-color);
+}
+.logo-service {
+  margin-top: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+  .service-heading {
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+  .service-heading {
+    margin-bottom: 2rem;
+  }
+}
+/* ------------------------------------------ */
+/* Service Section */
+
+/* Testimoni Section */
+/* ------------------------------------------ */
+.testimoni-section {
+  background: var(--primary-color);
+  width: 100%;
+  position: relative;
+  margin-top: 8rem;
+}
+.testimonial-heading {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.carousel-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.carousel-image {
+  width: 190px;
+  height: 190px;
+  position: absolute;
+  left: 43%;
+  top: -10%;
+}
+.carousel-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--quaternary-color);
+}
+.carousel-item {
+  position: relative;
+  min-height: 22rem;
+}
+.carousel-indicators {
+  padding: 2rem;
+  /* background: #000; */
+}
+.carousel-indicators .button {
+  width: 10px;
+  height: 10px;
+  border-radius: 70%;
+}
+.carousel-desc {
+  font-weight: 400;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+}
+.carousel-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+@media only screen and (max-width: 600px) {
+  .carousel-image {
+    left: 32%;
+    top: -45px;
+    width: 140px;
+    height: 140px;
+  }
+  .testimonial-heading {
+    padding-top: 3rem;
+  }
+  .carousel-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .carousel-desc {
+    font-size: 0.85rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .carousel-image {
+    left: 29%;
+    /* top: -8%;  */
+    width: 160px;
+    height: 160px;
+  }
+  .testimonial-heading {
+    padding-top: 3rem;
+  }
+  .carousel-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .carousel-desc {
+    font-size: 0.9rem;
+  }
+}
+/* ------------------------------------------ */
+/* Testimoni Section */
+
+/* Testimoni Section */
+/* ------------------------------------------ */
+.contact-container {
+  margin-top: 10rem;
+}
+.contact-title {
+  text-align: center;
+  font-weight: 600;
+}
+.form-floating label {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+.form-floating input:focus,
+.form-floating textarea:focus {
+  box-shadow: 0 1px 10px 2px rgba(0, 38, 255, 0.09),
+    0 0 8px rgba(45, 50, 80, 0.9);
+
+  border: none;
+}
+/* .form-comment {
+  background: #000;
+} */
+
+div .submit {
+  width: 20%;
+}
+@media only screen and (max-width: 768px) {
+  div .submit {
+    width: 100%;
+  }
+}
+/* ------------------------------------------ */
+/* Testimoni Section */
+/* Footer Section */
+/* ------------------------------------------ */
+footer {
+  margin-top: 15rem;
+  background: var(--primary-color);
+}
+footer section section div.col-md-3 ul li a {
+  color: #ffff;
+  width: max-content;
+}
+footer section section div.col-md-3 ul li a:hover {
+  color: var(--quaternary-color);
+}
+/* ------------------------------------------ */
+/* Footer Section */
